@@ -117,8 +117,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (37,	'gmt_offset',	'0',	'yes'),
 (38,	'default_email_category',	'1',	'yes'),
 (39,	'recently_edited',	'',	'no'),
-(40,	'template',	'twentynineteen',	'yes'),
-(41,	'stylesheet',	'twentynineteen',	'yes'),
+(40,	'template',	'gcm',	'yes'),
+(41,	'stylesheet',	'gcm',	'yes'),
 (42,	'comment_whitelist',	'1',	'yes'),
 (43,	'blacklist_keys',	'',	'no'),
 (44,	'comment_registration',	'0',	'yes'),
@@ -179,7 +179,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (99,	'widget_recent-comments',	'a:2:{i:2;a:2:{s:5:\"title\";s:0:\"\";s:6:\"number\";i:5;}s:12:\"_multiwidget\";i:1;}',	'yes'),
 (100,	'widget_archives',	'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}',	'yes'),
 (101,	'widget_meta',	'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}',	'yes'),
-(102,	'sidebars_widgets',	'a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}',	'yes'),
+(102,	'sidebars_widgets',	'a:3:{s:19:\"wp_inactive_widgets\";a:0:{}s:12:\"main-sidebar\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:13:\"array_version\";i:3;}',	'yes'),
 (103,	'widget_pages',	'a:1:{s:12:\"_multiwidget\";i:1;}',	'yes'),
 (104,	'widget_calendar',	'a:1:{s:12:\"_multiwidget\";i:1;}',	'yes'),
 (105,	'widget_media_audio',	'a:1:{s:12:\"_multiwidget\";i:1;}',	'yes'),
@@ -190,12 +190,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (110,	'widget_nav_menu',	'a:1:{s:12:\"_multiwidget\";i:1;}',	'yes'),
 (111,	'widget_custom_html',	'a:1:{s:12:\"_multiwidget\";i:1;}',	'yes'),
 (112,	'cron',	'a:3:{i:1550771067;a:4:{s:34:\"wp_privacy_delete_old_export_files\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:6:\"hourly\";s:4:\"args\";a:0:{}s:8:\"interval\";i:3600;}}s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1550771070;a:2:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}s:25:\"delete_expired_transients\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}',	'yes'),
-(113,	'_transient_doing_cron',	'1550771070.6848790645599365234375',	'yes'),
+(113,	'_transient_doing_cron',	'1550771606.5705521106719970703125',	'yes'),
 (114,	'_site_transient_update_core',	'O:8:\"stdClass\":4:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":10:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.0.3.zip\";s:6:\"locale\";s:5:\"pt_BR\";s:8:\"packages\";O:8:\"stdClass\":5:{s:4:\"full\";s:65:\"https://downloads.wordpress.org/release/pt_BR/wordpress-5.0.3.zip\";s:10:\"no_content\";b:0;s:11:\"new_bundled\";b:0;s:7:\"partial\";b:0;s:8:\"rollback\";b:0;}s:7:\"current\";s:5:\"5.0.3\";s:7:\"version\";s:5:\"5.0.3\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"5.0\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1550771071;s:15:\"version_checked\";s:5:\"5.0.3\";s:12:\"translations\";a:0:{}}',	'no'),
 (115,	'_site_transient_update_plugins',	'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1550771071;s:8:\"response\";a:1:{s:19:\"akismet/akismet.php\";O:8:\"stdClass\":12:{s:2:\"id\";s:21:\"w.org/plugins/akismet\";s:4:\"slug\";s:7:\"akismet\";s:6:\"plugin\";s:19:\"akismet/akismet.php\";s:11:\"new_version\";s:5:\"4.1.1\";s:3:\"url\";s:38:\"https://wordpress.org/plugins/akismet/\";s:7:\"package\";s:56:\"https://downloads.wordpress.org/plugin/akismet.4.1.1.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:59:\"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272\";s:2:\"1x\";s:59:\"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:61:\"https://ps.w.org/akismet/assets/banner-772x250.jpg?rev=479904\";}s:11:\"banners_rtl\";a:0:{}s:6:\"tested\";s:3:\"5.1\";s:12:\"requires_php\";b:0;s:13:\"compatibility\";O:8:\"stdClass\":0:{}}}s:12:\"translations\";a:0:{}s:9:\"no_update\";a:1:{s:9:\"hello.php\";O:8:\"stdClass\":9:{s:2:\"id\";s:25:\"w.org/plugins/hello-dolly\";s:4:\"slug\";s:11:\"hello-dolly\";s:6:\"plugin\";s:9:\"hello.php\";s:11:\"new_version\";s:3:\"1.6\";s:3:\"url\";s:42:\"https://wordpress.org/plugins/hello-dolly/\";s:7:\"package\";s:58:\"https://downloads.wordpress.org/plugin/hello-dolly.1.6.zip\";s:5:\"icons\";a:2:{s:2:\"2x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-256x256.jpg?rev=969907\";s:2:\"1x\";s:63:\"https://ps.w.org/hello-dolly/assets/icon-128x128.jpg?rev=969907\";}s:7:\"banners\";a:1:{s:2:\"1x\";s:65:\"https://ps.w.org/hello-dolly/assets/banner-772x250.png?rev=478342\";}s:11:\"banners_rtl\";a:0:{}}}}',	'no'),
-(116,	'_site_transient_timeout_theme_roots',	'1550772872',	'no'),
-(117,	'_site_transient_theme_roots',	'a:3:{s:14:\"twentynineteen\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";s:13:\"twentysixteen\";s:7:\"/themes\";}',	'no'),
-(118,	'_site_transient_update_themes',	'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1550771073;s:7:\"checked\";a:3:{s:14:\"twentynineteen\";s:3:\"1.2\";s:15:\"twentyseventeen\";s:3:\"2.0\";s:13:\"twentysixteen\";s:3:\"1.8\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:5:\"theme\";s:4:\"slug\";s:14:\"twentynineteen\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:3:\"1.2\";s:7:\"updated\";s:19:\"2019-02-05 12:18:17\";s:7:\"package\";s:78:\"https://downloads.wordpress.org/translation/theme/twentynineteen/1.2/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}}',	'no'),
+(116,	'_site_transient_timeout_theme_roots',	'1550773283',	'no'),
+(117,	'_site_transient_theme_roots',	'a:4:{s:3:\"gcm\";s:7:\"/themes\";s:14:\"twentynineteen\";s:7:\"/themes\";s:15:\"twentyseventeen\";s:7:\"/themes\";s:13:\"twentysixteen\";s:7:\"/themes\";}',	'no'),
+(118,	'_site_transient_update_themes',	'O:8:\"stdClass\":4:{s:12:\"last_checked\";i:1550771484;s:7:\"checked\";a:4:{s:3:\"gcm\";s:5:\"2.3.0\";s:14:\"twentynineteen\";s:3:\"1.2\";s:15:\"twentyseventeen\";s:3:\"2.0\";s:13:\"twentysixteen\";s:3:\"1.8\";}s:8:\"response\";a:0:{}s:12:\"translations\";a:1:{i:0;a:7:{s:4:\"type\";s:5:\"theme\";s:4:\"slug\";s:14:\"twentynineteen\";s:8:\"language\";s:5:\"pt_BR\";s:7:\"version\";s:3:\"1.2\";s:7:\"updated\";s:19:\"2019-02-05 12:18:17\";s:7:\"package\";s:78:\"https://downloads.wordpress.org/translation/theme/twentynineteen/1.2/pt_BR.zip\";s:10:\"autoupdate\";b:1;}}}',	'no'),
 (119,	'_site_transient_timeout_browser_13204e3d17efcba3e67b7efe45494b4f',	'1551375873',	'no'),
 (120,	'_site_transient_browser_13204e3d17efcba3e67b7efe45494b4f',	'a:10:{s:4:\"name\";s:7:\"Firefox\";s:7:\"version\";s:4:\"65.0\";s:8:\"platform\";s:5:\"Linux\";s:10:\"update_url\";s:24:\"https://www.firefox.com/\";s:7:\"img_src\";s:44:\"http://s.w.org/images/browsers/firefox.png?1\";s:11:\"img_src_ssl\";s:45:\"https://s.w.org/images/browsers/firefox.png?1\";s:15:\"current_version\";s:2:\"56\";s:7:\"upgrade\";b:0;s:8:\"insecure\";b:0;s:6:\"mobile\";b:0;}',	'no'),
 (121,	'can_compress_scripts',	'1',	'no'),
@@ -210,7 +210,12 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (130,	'_transient_timeout_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9',	'1550814277',	'no'),
 (131,	'_transient_feed_mod_d117b5738fbd35bd8c0391cda1f2b5d9',	'1550771077',	'no'),
 (132,	'_transient_timeout_dash_v2_01e18dead815ce736e3b9cccfbd773a5',	'1550814277',	'no'),
-(133,	'_transient_dash_v2_01e18dead815ce736e3b9cccfbd773a5',	'<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://br.wordpress.org/2019/02/19/wordpress-5-1-rc-2/\'>WordPress 5.1 RC 2</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/the-state-of-css-2019-survey-is-now-open\'>WPTavern: The State of CSS 2019 Survey is Now Open</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/new-wapuu-dashboard-pet-plugin-displays-wordpress-site-health\'>WPTavern: New Wapuu Dashboard Pet Plugin Displays WordPress Site Health</a></li><li><a class=\'rsswidget\' href=\'https://buddypress.org/2019/02/buddypress-4-2-0-maintenance-and-security-release/\'>BuddyPress: BuddyPress 4.2.0 Maintenance and Security Release</a></li></ul></div>',	'no');
+(133,	'_transient_dash_v2_01e18dead815ce736e3b9cccfbd773a5',	'<div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://br.wordpress.org/2019/02/19/wordpress-5-1-rc-2/\'>WordPress 5.1 RC 2</a></li></ul></div><div class=\"rss-widget\"><ul><li><a class=\'rsswidget\' href=\'https://wptavern.com/the-state-of-css-2019-survey-is-now-open\'>WPTavern: The State of CSS 2019 Survey is Now Open</a></li><li><a class=\'rsswidget\' href=\'https://wptavern.com/new-wapuu-dashboard-pet-plugin-displays-wordpress-site-health\'>WPTavern: New Wapuu Dashboard Pet Plugin Displays WordPress Site Health</a></li><li><a class=\'rsswidget\' href=\'https://buddypress.org/2019/02/buddypress-4-2-0-maintenance-and-security-release/\'>BuddyPress: BuddyPress 4.2.0 Maintenance and Security Release</a></li></ul></div>',	'no'),
+(134,	'theme_mods_twentynineteen',	'a:1:{s:16:\"sidebars_widgets\";a:2:{s:4:\"time\";i:1550771486;s:4:\"data\";a:2:{s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"sidebar-1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}}}}',	'yes'),
+(135,	'current_theme',	'Odin',	'yes'),
+(136,	'theme_mods_gcm',	'a:2:{i:0;b:0;s:18:\"nav_menu_locations\";a:0:{}}',	'yes'),
+(137,	'theme_switched',	'',	'yes'),
+(138,	'widget_odin_facebook_like_box',	'a:1:{s:12:\"_multiwidget\";i:1;}',	'yes');
 
 DROP TABLE IF EXISTS `wp_postmeta`;
 CREATE TABLE `wp_postmeta` (
@@ -371,4 +376,4 @@ CREATE TABLE `wp_users` (
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 (1,	'cadmin',	'$P$BcnqTOc9.tnT2wH7Fhaz7Gr2S2IFrO/',	'cadmin',	'contato@perrout.com.br',	'',	'2019-02-21 17:44:25',	'',	0,	'cadmin');
 
--- 2019-02-21 17:45:08
+-- 2019-02-21 17:54:06
