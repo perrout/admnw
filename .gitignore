@@ -1,0 +1,25 @@
+// Application
+wordpress/wp-config.php
+wordpress/wp-content/advanced-cache.php
+wordpress/wp-content/wp-cache-config.php
+wordpress/wp-content/debug.log
+wordpress/*.log
+wordpress/wp-content/cache/*
+wordpress/wp-content/backups/*
+wordpress/sitemap.xml
+wordpress/sitemap.xml.gz
+wordpress/wp-content/upgrade/*
+# wordpress/wp-content/uploads/*
+wordpress/wp-content/uploads/wc-logs/*
+
+!wordpress/wp-content/backups/index.php
+!wordpress/wp-content/cache/index.php
+# !wordpress/wp-content/uploads/index.php
+!wordpress/wp-content/upgrade/index.php
+
+// Editors
+*.swp
+.vscode
+
+// OS files
+.DS_Store

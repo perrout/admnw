@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+
+  mysql-db:
+    build: mysql
+    container_name: gcm-dev-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: gcm_db
+
+  nginx-php-fpm:
+    container_name: gcm-dev-wp
+    volumes:
+        - ./adminer:/var/www/gcm/adminer
+        - ./config/wp-config-dev.php:/var/www/gcm/wp-config.php
+        - ./nginx/application-dev.conf:/etc/nginx/sites-available/default.conf
+    environment:
+        VIRTUAL_HOST: dev.gcm.campos.rj.gov.br

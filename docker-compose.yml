@@ -1,0 +1,23 @@
+version: '3.3'
+
+services:
+
+  nginx-php-fpm:
+    image: richarvey/nginx-php-fpm:latest
+    restart: always
+    expose:
+        - 80
+        - 443
+    volumes:
+        - ./wordpress:/var/www/gcm
+    environment:
+        WEBROOT: /var/www/gcm
+        SKIP_COMPOSER: 1
+        PHP_MEM_LIMIT: 256
+        PUID: 1000
+        PGID: 1000
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
