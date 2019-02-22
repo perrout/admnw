@@ -17,15 +17,10 @@ class cidacGCMTime
 		// Add Actons
 		add_action( 'init', array( $this, 'cidac_register_post_type' ), 0 );
 		add_action( 'add_meta_boxes', array( $this, 'cidac_register_meta_box_gcm' ) );
-		//  Add REST API support to an already registered post type.
-		// add_action( 'init', array( $this, 'register_custom_post_types_rest_support'), 25 );
 		
 		// Add assets
 		add_action( 'wp_enqueue_scripts', array( $this, 'cidac_enqueue_assets') );
 		add_action( 'admin_enqueue_scripts', array( $this, 'cidac_admin_enqueue_assets') );
-		// add_action( 'enqueue_block_editor_assets', array( $this, 'register_block_editor_enqueue_assets' ) );
-		// add_action( 'enqueue_block_assets', array( $this, 'register_block_enqueue_assets' ) );
-		// add_action( 'enqueue_block_assets', array( $this, 'register_block_enqueue_assets' ) );
 
 		// Add Shortcode
 		add_shortcode( $this->shortcode_tag, array( $this, 'cidac_register_shortcode' ) );
@@ -59,7 +54,6 @@ class cidacGCMTime
 		wp_enqueue_style( 'cidac-gcm-time-admin' );
 
 	}
-
 
 	public function cidac_enqueue_assets() {
 		// Make paths variables so we don't write em twice ;)
@@ -158,7 +152,6 @@ class cidacGCMTime
 		);
 	}
 
-
 	/**
 	 * Render Metabox
 	*/
@@ -173,13 +166,13 @@ class cidacGCMTime
 		}
 	}
 
+
 	/**
-	 * Shortcode to embed home on frontend
+	 * Shortcode to embed form on frontend
 	 *
  	 * @return string
 	 */
 	public function cidac_register_shortcode( $atts ) {
-
 		// Stop running function if form wasn't submitted
 		if ( isset($_POST['cidac_gcm_post_id']) && isset($_POST['cidac_gcm_matricula']) ) {
 			// Check that the nonce was set and valid
@@ -194,31 +187,37 @@ class cidacGCMTime
 			return;
 
 		}else {
-			$args = array( 'post_type' => $this->post_type, 'posts_per_page' => 1 );
-			$loop = new WP_Query( $args );
-			ob_start();
-			while ( $loop->have_posts() ) : $loop->the_post();
-				the_title();
-				?>
-				<form id="cidac_gcm" name="cidac_gcm" method="post">
-					<?php wp_nonce_field( 'cidac_gcm_nonce' ); ?>
-					<input type="hidden" id="cidacGcmPostId" name="cidac_gcm_post_id" value="<?php echo get_the_ID() ?>">
-					<div class="form-group">
-						<label for="cidacGcmMatricula">GCM Matricula</label>
-						<input type="text" class="form-control" id="cidacGcmMatricula" name="cidac_gcm_matricula" placeholder="Matricula">
-					</div>
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form>
-	
-			<?php
-			endwhile;
-	
-			$output_string = ob_get_contents();
-			ob_end_clean();
-			return $output_string;
+			echo ( is_user_logged_in() ) ? $this->cidac_render_shortcode() : 'Acesso restrito.';
 		}
 	}
 
+	/**
+	 * Shortcode to render form on frontend
+	 *
+ 	 * @return string
+	 */
+	public function cidac_render_shortcode() {
+		$args = array( 'post_type' => $this->post_type, 'posts_per_page' => 1 );
+		$loop = new WP_Query( $args );
+		ob_start();
+		while ( $loop->have_posts() ) : $loop->the_post();
+			the_title();
+			?>
+			<form id="cidac_gcm" name="cidac_gcm" method="post">
+				<?php wp_nonce_field( 'cidac_gcm_nonce' ); ?>
+				<input type="hidden" id="cidacGcmPostId" name="cidac_gcm_post_id" value="<?php echo get_the_ID() ?>">
+				<div class="form-group">
+					<label for="cidacGcmMatricula">GCM Matricula</label>
+					<input type="text" class="form-control" id="cidacGcmMatricula" name="cidac_gcm_matricula" placeholder="Matricula">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		<?php
+		endwhile;
+		$output_string = ob_get_contents();
+		ob_end_clean();
+		return $output_string;
+	}
 }
 
 

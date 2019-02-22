@@ -30,13 +30,13 @@ define( 'WP_HOME', 'http://dev.gcm.campos.rj.gov.br' );
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'adora_db');
+define('DB_NAME', 'gcm_db');
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
 /** Senha do banco de dados MySQL */
 define('DB_PASSWORD', 'root');
 /** Nome do host do MySQL */
-define('DB_HOST', 'adora-dev-db');
+define('DB_HOST', 'gcm-dev-db');
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8mb4');
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */

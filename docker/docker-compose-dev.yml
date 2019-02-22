@@ -5,7 +5,6 @@ services:
   mysql-db:
     build: mysql
     container_name: gcm-dev-db
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: gcm_db
