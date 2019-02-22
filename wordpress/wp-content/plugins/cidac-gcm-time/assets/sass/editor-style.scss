@@ -1,0 +1,17 @@
+// ==========================================================================
+// Style used to style the TinyMCE editor
+// ==========================================================================
+
+@import
+        "variables"           // Theme       Custom Variables
+        // "bootstrap/bootstrap" // Bootstrap   Styles Core
+;
+
+// Custom Editor Styles
+// ==========================================================================
+#cidac-gcm-meta-box-id {
+    li {
+        font-size: 54px;
+        color: pink;
+    }
+}

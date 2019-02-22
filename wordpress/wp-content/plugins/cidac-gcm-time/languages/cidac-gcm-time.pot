@@ -1,0 +1,54 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CIDAC GCM Time\n"
+"POT-Creation-Date: 2019-02-21 22:26-0300\n"
+"PO-Revision-Date: 2019-02-01 15:40-0000\n"
+"Last-Translator: \n"
+"Language-Team: CIDAC\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;"
+"__ngettext_noop:1,2;_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;"
+"_nx_js:1,2,3c;esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;"
+"esc_attr_x:1,2c;esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;"
+"transChoice:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: class/class-cidac-gcm-time.php:131
+msgctxt "Post Type General Name"
+msgid "GCMs"
+msgstr ""
+
+#: class/class-cidac-gcm-time.php:132
+msgctxt "Post Type Singular Name"
+msgid "GCM"
+msgstr ""
+
+#: class/class-cidac-gcm-time.php:133 class/class-cidac-gcm-time.php:134
+#: class/class-cidac-gcm-time.php:142
+msgid "GCM"
+msgstr ""
+
+#: class/class-cidac-gcm-time.php:135 class/class-cidac-gcm-time.php:136
+msgid "Add New Home"
+msgstr ""
+
+#: class/class-cidac-gcm-time.php:137
+msgid "Edit Home"
+msgstr ""
+
+#: class/class-cidac-gcm-time.php:138
+msgid "All"
+msgstr ""
+
+#: class/class-cidac-gcm-time.php:143
+msgid "GCM Time"
+msgstr ""
