@@ -19,7 +19,7 @@ define( 'CIDAC_GCM_TIME_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'CIDAC_GCM_TIME_PLUGIN_FILE', dirname(plugin_basename(__FILE__)) );
 define( 'CIDAC_GCM_TIME_PLUGIN_URL', plugins_url('', __FILE__));
 
-if ( ! class_exists( 'cidacGCMTime' ) ) {
-	require_once CIDAC_GCM_TIME_PLUGIN_DIR . '/core/classes/class-cidac-gcm-time.php';
-	$class_jms_home_post_type = new cidacGCMTime;
+if ( ! class_exists( 'cidacGcmExtraTime' ) ) {
+	require_once CIDAC_GCM_TIME_PLUGIN_DIR . '/core/classes/class-gcm-extra-time.php';
+	$class_jms_home_post_type = new cidacGcmExtraTime;
 }
